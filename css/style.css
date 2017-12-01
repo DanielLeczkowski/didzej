@@ -127,7 +127,11 @@ body {
         text-decoration: none;
         display: block;
         text-align: center;
+        transition: 0.5s all;
         -webkit-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -ms-transition: 0.5s all;
     }
     .w3ls-icons li a span {
         line-height: 2.2em;
