@@ -85,9 +85,9 @@ body {
     form{
         margin-top: 30px;
     }
-    .newsletter input[type="email"] {
+    .input {
         padding: 16px 2%;
-        width:50%;
+        width:30%;
         margin-right: 0px;
         letter-spacing: 1px;
         font-size: 15px;
@@ -97,6 +97,9 @@ body {
         border:none;
         vertical-align: middle;
         background: rgba(14, 14, 13, 0.62);
+    }
+    .text{
+        width: 20%;
     }
     .newsletter input[type="submit"] {
         color: #fff;
