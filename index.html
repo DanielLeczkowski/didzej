@@ -11,7 +11,8 @@
         <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&amp;subset=latin-ext" rel="stylesheet">
         
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+        
         <link rel="stylesheet" type="text/css" href="css/style.css">
         
         <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
@@ -19,39 +20,54 @@
 
     </head>
     <body>
-        <div id="question">
-            <h1>Czy Betowen został Didżejem?</h1>   
+        <div id="question" class="row">
+            <div class="col-md-12">
+            
+                <h1>Czy Betowen został Didżejem?</h1>   
+                
+            </div>
         </div>
-
-        <div class="video-container">
-            <video id="bg" autoplay="autoplay" loop="loop">
-                <source src="images/videoc.webm" type="video/webm" />
-                <source src="images/videoc.mp4" type="video/mp4" />
-            </video>
+            
+        <div class="row video-container">
+            <div class="col-md-12">
+                <video id="bg" autoplay="autoplay" loop="loop">
+                    <source src="images/videoc.webm" type="video/webm" />
+                    <source src="images/videoc.mp4" type="video/mp4" />
+                </video> 
+            </div>
         </div>
-        <div class="counter"></div>
-        <div class="newsletter">
-            <h2>Chcesz wiedzieć więcej??</h2>
-            <p>Zapisz się do newslettera</p>
-
-            <form action="#" method="post">
-				<input class="input text" type="text" name="fullname" size="30" required="" placeholder="Your name" />
-				<input class="input" type="email" name="email" size="30" required="" placeholder="Your email" />
-				<input type="submit" value="Subscribe" />
-			</form>
-
+    
+        <div class="row counter">
+            <div class="col-md-12 timer">
+            
+            </div>
         </div>
-
-        <div class="social">
-            <ul class="w3ls-icons w3l">
-                <li><a href="#" class="w3ls-facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a></li>
-                <li><a href="#" class="w3ls-twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a></li>
-                <li><a href="#" class="w3ls-google"><span class="fa fa-google-plus" aria-hidden="true"></span></a></li>
-                <li><a href="#" class="w3ls-pinterest"><span class="fa fa-pinterest-p" aria-hidden="true"></span></a></li>
-                <li><a href="#" class="w3ls-rss"><span class="fa fa-rss" aria-hidden="true"></span></a></li>
-            </ul>
+        
+        <div class="row newsletter">
+            <div class="col-md-12">
+                <h2>Chcesz wiedzieć więcej??</h2>
+                <p>Zapisz się do newslettera</p>
+    
+                <form action="#" method="post">
+                    <input class="input text" type="text" name="fullname" size="30" required="" placeholder="Your name" />
+                    <input class="input" type="email" name="email" size="30" required="" placeholder="Your email" />
+                    <input type="submit" value="Subscribe" />
+                </form>
+            </div>
         </div>
-
+      
+        <div class="row social">
+            <div class="col-md-12">
+                <ul class="w3ls-icons w3l">
+                    <li><a href="#" class="w3ls-facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a></li>
+                    <li><a href="#" class="w3ls-twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a></li>
+                    <li><a href="#" class="w3ls-google"><span class="fa fa-google-plus" aria-hidden="true"></span></a></li>
+                    <li><a href="#" class="w3ls-pinterest"><span class="fa fa-pinterest-p" aria-hidden="true"></span></a></li>
+                    <li><a href="#" class="w3ls-rss"><span class="fa fa-rss" aria-hidden="true"></span></a></li>
+                </ul>
+            </div>
+        </div>
+        
         <footer>
             <p>&#x24B8 Kolejne wskazówki pojawią się wkrótce. All Rights Reserved | Design by Leczkovski & Artsky</p>
         </footer>
