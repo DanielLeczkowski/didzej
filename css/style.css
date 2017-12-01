@@ -11,6 +11,9 @@ body {
     font-family: 'Comfortaa', cursive;
 }
 
+p{
+    margin-bottom: 0;
+}
     .small{
         background-image: url('../images/dj.jpg');
         background-repeat: no-repeat;
@@ -25,14 +28,14 @@ body {
     top: 5%;
     left: 50%;
     z-index: 2;
-    width: 90vw;
-    min-height: 190px;
+    width: 90%;
+    min-height: 30%;
     text-align: center;
     
 }
     
     h1{
-        font-size: 6.0rem;
+        font-size: 15vh;
         font-family: 'Great Vibes', cursive;
         letter-spacing: 5px;
         font-weight: 500;
@@ -43,8 +46,8 @@ body {
     background-color: rgba(100, 10, 30, 0.6);
     /* background-color: rgba(0, 0, 30, 0.8); */
     /* background-color: rgba(0, 10, 30, 0.7); */
-
 }
+
     #bg {
         position: relative;
         left: 0px;
@@ -57,34 +60,41 @@ body {
 .counter{
     position: absolute;
     font-size: 40px;
-    position: absolute;
     transform: translate(-50%, 0%);
     top: 30%;
     left: 50%;
+    text-align: center;
 }
+
+
 .newsletter{
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: absolute;
     transform: translate(-50%, 50%);
-    top: 30%;
+    top: 43%;
     left: 50%;
     z-index: 2;
     width: 50%;
     min-height: 25vh;
     z-index: 10;
     text-align: center;
-    /* border: 1px solid #fff; */
 }
 
     .newsletter h2{
         letter-spacing: 2px;
         font-size: 2rem;
+        margin-bottom: 2px;
+    }
+
+    .newsletter p{
+        font-size: 1.11rem;
+        margin-bottom: 5px;
     }
 
     form{
-        margin-top: 30px;
+        margin-top: 5px;
     }
     .input {
         padding: 16px 2%;
@@ -122,7 +132,7 @@ body {
     .social{
         position: absolute;
         transform: translate(-50%, 50%);
-        bottom: 20%;
+        bottom: 13%;
         left: 50%;
 
     }
@@ -132,12 +142,14 @@ body {
         margin: 0 .2em;
     }
     .w3ls-icons li a {
-        width: 35px;
-        height: 35px;
+        width: 45px;
+        height: 45px;
         border: 2px solid #fff;
         border-radius: 40px;
         text-decoration: none;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-align: center;
         transition: 0.5s all;
         -webkit-transition: 0.5s all;
@@ -146,7 +158,6 @@ body {
         -ms-transition: 0.5s all;
     }
     .w3ls-icons li a span {
-        line-height: 2.2em;
         color: #fff;
     }
     .w3ls-icons li a:hover {
@@ -169,16 +180,16 @@ body {
         background: #bd081c;
         border: 2px solid #bd081c;
     }
-    .w3ls-rss:hover {
-        background: #f26522;
-        border: 2px solid #f26522;
+    .w3ls-instagram:hover {
+        background: #cd486b;
+        border: 2px solid #cd486b;
     }
     
 
 footer{
     position: absolute;
     width: 90%;
-    bottom: 1%;
+    bottom: 0.5%;
     left: 50%;
     transform: translate(-50%, 0);
     text-align: center;
