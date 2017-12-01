@@ -40,9 +40,9 @@ body {
 
 .video-container{
     position: absolute;
-    background-color: rgba(100, 10, 30, 0.6);
+    /* background-color: rgba(100, 10, 30, 0.6); */
     /* background-color: rgba(0, 0, 30, 0.8); */
-    /* background-color: rgba(0, 10, 30, 0.7); */
+    background-color: rgba(0, 10, 30, 0.7);
 }
     #bg {
         position: relative;
@@ -53,6 +53,14 @@ body {
         z-index: -10; 
     }
 
+.counter{
+    position: absolute;
+    font-size: 40px;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    top: 30%;
+    left: 50%;
+}
 .newsletter{
     display: flex;
     flex-direction: column;
