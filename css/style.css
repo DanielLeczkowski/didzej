@@ -10,7 +10,7 @@ html {
 body {
     height: 100%;
     margin: 0px;
-    font-size: 100%;
+    color: #fff;
 }
 
     .small{
@@ -25,7 +25,7 @@ body {
 #question {
     position: absolute;
     transform: translate(-50%, 0%);
-    top: 0;
+    top: 5%;
     left: 50%;
     z-index: 2;
     width: 90vw;
@@ -35,12 +35,10 @@ body {
 }
     
     h1{
-        color: #fff;
         font-size: 6.0rem;
         font-family: 'Great Vibes', cursive;
         letter-spacing: 5px;
         font-weight: 500;
-    
     }
 
 #bg {
@@ -49,8 +47,26 @@ body {
     top: 0px;
     width: 100%;
     height: auto;
+    z-index: -10;
 }
 
+.subscribe{
+    position: absolute;
+    transform: translate(-50%, 50%);
+    top: 30%;
+    left: 50%;
+    z-index: 2;
+    width: 90%;
+    min-height: 5vh;
+    z-index: 10;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+    .subscribe h2{
+        letter-spacing: 2px;
+        font-size: 2rem;
+    }
 
 
         
