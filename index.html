@@ -21,14 +21,22 @@
             <h1>Czy Betowen został Didżejem?</h1>   
         </div>
 
-        <video id="bg" autoplay="autoplay" loop="loop">
-            <source src="images/videoc.webm" type="video/webm" />
-            <source src="images/videoc.mp4" type="video/mp4" />
-        </video>
-
-        <div class="subscribe">
+        <div class="video-container">
+            <video id="bg" autoplay="autoplay" loop="loop">
+                <source src="images/videoc.webm" type="video/webm" />
+                <source src="images/videoc.mp4" type="video/mp4" />
+            </video>
+        </div>
+        
+        <div class="newsletter">
             <h2>Chcesz wiedzieć więcej??</h2>
             <p>Zapisz się do newslettera</p>
+
+            <form action="#" method="post">
+				<input type="email" name="email" size="30" required="" placeholder="Please enter your email" />
+				<input type="submit" value="Subscribe" />
+			</form>
+
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
