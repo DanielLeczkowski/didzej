@@ -43,6 +43,7 @@ body {
     background-color: rgba(100, 10, 30, 0.6);
     /* background-color: rgba(0, 0, 30, 0.8); */
     /* background-color: rgba(0, 10, 30, 0.7); */
+
 }
     #bg {
         position: relative;
@@ -53,6 +54,14 @@ body {
         z-index: -10; 
     }
 
+.counter{
+    position: absolute;
+    font-size: 40px;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    top: 30%;
+    left: 50%;
+}
 .newsletter{
     display: flex;
     flex-direction: column;
@@ -77,9 +86,9 @@ body {
     form{
         margin-top: 30px;
     }
-    .newsletter input[type="email"] {
+    .input {
         padding: 16px 2%;
-        width:50%;
+        width:30%;
         margin-right: 0px;
         letter-spacing: 1px;
         font-size: 15px;
@@ -89,6 +98,9 @@ body {
         border:none;
         vertical-align: middle;
         background: rgba(14, 14, 13, 0.62);
+    }
+    .text{
+        width: 20%;
     }
     .newsletter input[type="submit"] {
         color: #fff;
