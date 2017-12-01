@@ -41,4 +41,4 @@ var x = setInterval(function() {
     clearInterval(x);
     document.querySelector(".timer").innerHTML = "EXPIRED";
     }
-}, 1000);
+}, 500);
