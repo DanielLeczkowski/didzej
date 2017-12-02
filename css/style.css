@@ -74,7 +74,7 @@ p{
 .newsletter{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
     position: absolute;
     transform: translate(-50%, 50%);
     top: 43%;
@@ -95,7 +95,7 @@ p{
     .newsletter p{
         font-size: 1.05rem;
         letter-spacing: 1px;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
     }
 
     form{
@@ -103,7 +103,7 @@ p{
     }
     .input {
         padding: 16px 2%;
-        width:30%;
+        width:100%;
         margin-right: 0px;
         letter-spacing: 1px;
         font-size: 15px;
@@ -113,11 +113,17 @@ p{
         border:none;
         vertical-align: middle;
         background: rgba(14, 14, 13, 0.62);
+        text-align: center;
+        transition: all 0.5s;
     }
-    .text{
-        width: 20%;
+    form label{
+        width: 35%;
+    }
+    .input:hover{
+        background: rgba(14, 14, 13, 0.82);
     }
     .newsletter input[type="submit"] {
+        transition: all 0.5s;
         color: #fff;
         text-transform: uppercase;
         font-size: 1em;
@@ -129,6 +135,7 @@ p{
         display: inline-block;
         vertical-align: middle;
         cursor:pointer;
+        text-align: center;
     }   
     .newsletter input[type="submit"]:hover {
         background: rgba(247, 5, 87, 0.51);
