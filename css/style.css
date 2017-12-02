@@ -178,16 +178,35 @@ p{
     .w3ls-icons img{
         height: auto;
         width: 100%;
-        animation: rotate 6s linear infinite;
+        animation: rotate 7s linear infinite;
     }
 
     @keyframes rotate{
-        from{
+        0%{
             transform: rotate(0deg);
         }
-        to{
-            transform: rotate(-360deg);
+        82%{
+            transform: rotate(360deg);
         }
+        85%{
+            transform: rotate(350deg);
+        }
+        88%{
+            transform: rotate(362deg);
+        }
+        91%{
+            transform: rotate(345deg);
+        }
+        94%{
+            transform: rotate(360deg);
+        }
+        97%{
+            transform: rotate(350deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+        
     }
 
     .w3ls-icons li a span {
