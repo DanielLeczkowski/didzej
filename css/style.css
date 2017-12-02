@@ -16,12 +16,12 @@ p{
 }
     .small{
         background-image: url('../images/dj.jpg');
+        background-position: center center;
         background-repeat: no-repeat;
+        background-attachment: fixed;
         background-size: cover;
-        height: 100%;
-        width: auto;
+        background-color: #464646;
     }
-
 #question {
     position: absolute;
     transform: translate(-50%, 0%);
@@ -52,9 +52,15 @@ p{
         position: relative;
         left: 0px;
         top: 0px;
-        width: 100%;
-        height: auto;
+        object-fit: cover;
+        width:100%;
+        height:100%;
         z-index: -10; 
+ 
+    }
+
+    .filter{
+    background-color: rgba(0, 10, 30, 0.7);
     }
 
 .counter{
@@ -74,7 +80,7 @@ p{
 .newsletter{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
     position: absolute;
     transform: translate(-50%, 50%);
     top: 43%;
@@ -95,7 +101,7 @@ p{
     .newsletter p{
         font-size: 1.05rem;
         letter-spacing: 1px;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
     }
 
     form{
@@ -103,7 +109,7 @@ p{
     }
     .input {
         padding: 16px 2%;
-        width:30%;
+        width:100%;
         margin-right: 0px;
         letter-spacing: 1px;
         font-size: 15px;
@@ -113,11 +119,17 @@ p{
         border:none;
         vertical-align: middle;
         background: rgba(14, 14, 13, 0.62);
+        text-align: center;
+        transition: all 0.5s;
     }
-    .text{
-        width: 20%;
+    form label{
+        width: 35%;
+    }
+    .input:hover{
+        background: rgba(14, 14, 13, 0.82);
     }
     .newsletter input[type="submit"] {
+        transition: all 0.5s;
         color: #fff;
         text-transform: uppercase;
         font-size: 1em;
@@ -129,6 +141,7 @@ p{
         display: inline-block;
         vertical-align: middle;
         cursor:pointer;
+        text-align: center;
     }   
     .newsletter input[type="submit"]:hover {
         background: rgba(247, 5, 87, 0.51);
@@ -146,6 +159,8 @@ p{
         display: inline-block;
         margin: 0 .2em;
     }
+
+    
     .w3ls-icons li a {
         width: 45px;
         height: 45px;
@@ -162,6 +177,40 @@ p{
         -o-transition: 0.5s all;
         -ms-transition: 0.5s all;
     }
+    .w3ls-icons img{
+        height: auto;
+        width: 100%;
+        animation: rotate 7s linear infinite;
+    }
+
+    @keyframes rotate{
+        0%{
+            transform: rotate(0deg);
+        }
+        82%{
+            transform: rotate(360deg);
+        }
+        85%{
+            transform: rotate(350deg);
+        }
+        88%{
+            transform: rotate(362deg);
+        }
+        91%{
+            transform: rotate(345deg);
+        }
+        94%{
+            transform: rotate(360deg);
+        }
+        97%{
+            transform: rotate(350deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+        
+    }
+
     .w3ls-icons li a span {
         color: #fff;
     }
@@ -200,3 +249,4 @@ footer{
     transform: translate(-50%, 0);
     text-align: center;
 }
+
