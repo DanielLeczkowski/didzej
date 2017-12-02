@@ -5,14 +5,21 @@ window.mobilecheck = function() {
     return check;
 };
 
+var video = $('#bg');
+var body = $('body');
+var videoContainer = $('.video-container');
+
 $(function() {
-    var video = $('#bg');
-    var body = $('body');
     if (window.mobilecheck()) {
         video.remove();
         body.addClass('small');
     }
 });
+
+body.on('click', function(){
+    videoContainer.toggleClass('filter');
+});
+
 
 
 // Set the date we're counting down to
@@ -32,9 +39,21 @@ var x = setInterval(function() {
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
+    if(days < 10){
+        days = '0'+ days;
+    }
+    if(hours < 10){
+        hours = '0'+ hours;
+    }
+    if(minutes < 10){
+        minutes = '0'+ minutes;
+    }
+    if(seconds < 10){
+        seconds = '0'+ seconds;
+    }
     // Display the result in the element with id="demo"
     document.querySelector(".timer").innerHTML = days + "d : " + hours + "h : " + minutes + "m : " + seconds + "s";
+
 
   // If the count down is finished, write some text 
     if (distance < 0) {
