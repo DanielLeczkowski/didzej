@@ -22,6 +22,11 @@ p{
         background-size: cover;
         background-color: #464646;
     }
+
+.container-fluid{
+    padding: 0;
+    margin: 0;
+}
 #question {
     position: absolute;
     transform: translate(-50%, 0%);
@@ -52,9 +57,7 @@ p{
         position: relative;
         left: 0px;
         top: 0px;
-        object-fit: cover;
         width:100%;
-        height:100%;
         z-index: -10; 
  
     }
