@@ -7,6 +7,7 @@ window.mobilecheck = function() {
 
 var video = $('#bg');
 var body = $('body');
+var catLogo = $('.cat-logo');
 var videoContainer = $('.video-container');
 
 $(function() {
@@ -16,7 +17,8 @@ $(function() {
     }
 });
 
-body.on('click', function(){
+catLogo.on('click', function(event){
+    event.preventDefault();
     videoContainer.toggleClass('filter');
 });
 
